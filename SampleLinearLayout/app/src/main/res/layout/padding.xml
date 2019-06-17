@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--1. 텍스트뷰 위젯 내부의 여백을 20dp로 설정-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#ffff0000"
+        android:textSize="24sp"
+        android:background="#ffffff00"
+        android:padding="20dp"/>
+    <!--2. 텍스트뷰 위젯과 부모 여유 공간 사이의 여백을 10dp로 설정-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="#ff00ffff"
+        android:text="TextView"
+        android:textColor="#ffff0000"
+        android:textSize="24sp" />
+<!--3. 텍스트뷰 위젯 내부의 여백을 20dp로 설정-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff00fff"
+        android:padding="50dp"
+        android:text="TextView"
+        android:textColor="#ffff0000"
+        android:textSize="24sp" />
+</LinearLayout>
