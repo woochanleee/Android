@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!--1. 이미지 변경을 위한 버튼-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onButton1Clicked"
+        android:text="이미지 바꾸어 보여주기" />
+    <!--2. 수평 스크롤을 위한 스크롤뷰-->
+    <HorizontalScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--3. 수직 스크롤을 위한 스크롤뷰-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--4. 이미지를 보여주는 이미지뷰-->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ouro"
+            />
+        </ScrollView>
+    </HorizontalScrollView>
+</LinearLayout>
